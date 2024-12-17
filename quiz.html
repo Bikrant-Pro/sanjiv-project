@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetarian Restaurant Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap JS and Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    
+    <!-- Customized Bootstrap stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+</head>
+<body class="body1">
+
+
+    <!-- Navbar and Hero -->
+    <div class="container-xxl position-relative p-0 ">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 "id="navbar">
+            <a href="" class="navbar-brand p-0  ">
+                <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i><b style="color: tomato;">Sai Baba Veg Restaurant</b></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0 pe-4">
+                    <a href="web.html" class="nav-item nav-link ">Home</a>
+                    <a href="web.html #about-us" class="nav-item nav-link">About</a>
+                    <a href="web.html #service" class="nav-item nav-link">Service</a>
+                    <a href="web.html #menu" class="nav-item nav-link">Menu</a>
+                    <a href="web.html #Contact" class="nav-item nav-link">Contact</a>
+                    <!-- Dropdown Menu for Pages -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Pages
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="web.html #Testimonials">Testimonials</a></li>
+                            <li><a class="dropdown-item" href="donation.html" >Donation</a></li>
+                            <li><a class="dropdown-item" href="quiz.html" >Quiz</a></li>
+                        </ul>
+                    </li>
+                </div>
+                <a href="web.html #Reservation" class="btn btn-primary py-1 px-6">Book A Table</a>
+            </div>
+        </nav>
+    </div>
+
+    <div class="quiz-container">
+        <h2 id="question"></h2>
+        <ul id="options">
+          <li>
+            <input type="radio" name="answer" id="answer1" value="1">
+            <label for="answer1" id="option1"></label>
+          </li><br><br>
+          <li>
+            <input type="radio" name="answer" id="answer2" value="2">
+            <label for="answer2" id="option2"></label>
+          </li><br><br>
+          <li>
+            <input type="radio" name="answer" id="answer3" value="3">
+            <label for="answer3" id="option3"></label>
+          </li><br><br>
+          <li>
+            <input type="radio" name="answer" id="answer4" value="4">
+            <label for="answer4" id="option4"></label>
+          </li><br><br>
+        </ul>
+        <button id="submits">Submit</button>
+        <div id="results"></div>
+      </div>
+      <script src="script.js"></script>
+
+
+</body>
+</html>

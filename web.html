@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+
+
+    <script>
+        const submitButton = document.getElementById('submitButton');
+      
+        submitButton.addEventListener('click', () => {
+        const form = document.getElementById('myForm');
+        // Perform form validation or other actions here
+        form.submit();
+      });
+
+    </script>
+
+        <!--- ICON-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+
+        <!-- Favicon -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+        
+        <!-- Customized Bootstrap stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--- Java -->
+    <script src="script.js"></script>
+</head>
+<body>
+
+ <!-- Preloader Section -->
+ <div id="preloader">
+    <div class="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <span>Loading...</span>
+    </div>
+</div>
+
+<!-- Centered Animated Content -->
+<div id="content">
+    <h1 id="animated-h1"></h1>
+    <p id="animated-p"></p>
+</div>
+
+    <!-- Navbar and Hero -->
+    <div class="container-xxl position-relative p-0 ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0 " id="navbar">
+        <a href="" class="navbar-brand p-0  ">
+            <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i><b style="color: tomato;">Sai Baba Veg Restaurant</b></h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto py-0 pe-4">
+                <a href="" class="nav-item nav-link active" >Home</a>
+                <a href="#about-us" class="nav-item nav-link" >About</a>
+                <a href="#service" class="nav-item nav-link">Service</a>
+                <a href="#menu" class="nav-item nav-link">Menu</a>
+                <a href="#Contact" class="nav-item nav-link">Contact</a>
+                <!-- Dropdown Menu for Pages -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#Testimonials">Testimonials</a></li>
+                        <li><a class="dropdown-item" href="donation.html" >Donation</a></li>
+                        <li><a class="dropdown-item" href="quiz.html" >Quiz</a></li>
+                    </ul>
+                </li>
+            </div>
+            <a href="#Reservation" class="btn btn-primary py-2 px-4">Book A Table</a>
+        </div>
+    </nav>
+</div>
+
+
+    
+        <div class="container-xxl py-5 bg-dark hero-header">
+            <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 text-center text-lg-start">
+                        <h1 class="display-5 text-white animated slideInLeft"><b>"Savour the<br>Taste of Compassion"</b></h1>
+                        <p class="text-white animated slideInLeft mb-2 pb-1"><b>हरिर्दाता हरिर्भोक्ता, हरिरन्नं प्रजापतिः। <br> हरिर्विप्रशरीरस्तु भुङ्क्ते भोजयते हरिः||</b></p>
+                        <p class="text-white animated slideInLeft mb-2 pb-1">-Hari, the Lord of all beings, is the giver, the enjoyer and the food itself.
+                            The body of the partaker is Hari, Hari is the one who eats and also the one who feeds.</p>
+                            <p class="text-white animated slideInLeft mb-2 pb-1">When we offer food to the Lord before partaking of it, it is blessed and becomes free of any impurities. Food is a Gift of God. We must eat in a prayerful mood with a sense of gratitude. </b></p>
+                        <a href="#Reservation" class="btn btn-primary py-sm-3 px-sm-5 slideInLeft">Book A Tables</a>
+                    </div>
+    
+                    <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                        <img src="Img/Main-removebg-preview.png" class="img-fluid" width="490px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Navbar and Hero ends -->
+
+
+<!-- Service section start-->
+
+<div class="container-xxl py-5" id="service">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fedeInup" data-wow-delay="0.1s" >
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-user-tie text-orange mb-4"></i>
+                        <h5>Master Chefs</h5>
+                        <p>Our team of master chefs brings a wealth of culinary expertise and passion to every dish. With years of experience and a commitment to excellence, they craft exquisite flavors that delight your senses. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fedeInup" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-utensils text-orange mb-4"></i>
+                        <h5>Quality Food</h5>
+                        <p>At our restaurant, we believe in using only the finest ingredients to create exceptional dishes. We source our produce from local farmers and artisans, ensuring freshness and quality in every bite.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fedeInup" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-cart-plus text-orange mb-4"></i>
+                        <h5>Online Order</h5>
+                        <p>Order your favorite dishes from the comfort of your home. Our easy-to-use online ordering system ensures a seamless and convenient experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fedeInup" data-wow-delay="0.1s">
+                <div class="service-item rounded pt-3">
+                    <div class="p-4">
+                        <i class="fa fa-3x fa-headset text-orange mb-4"></i>
+                        <h5>24/7 Service</h5>
+                        <p>Our dedicated team is always ready to assist you. Enjoy round-the-clock service, from placing orders to resolving queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Service section ends-->
+
+<!-- About section start-->
+
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-12 d-flex">
+                <div class="flex-grow-1">
+                    <div class="row g-2">
+                        <div class="col-6"id="layout">
+                            <img src="Img/download.jpeg" class="img-fluid rounded w-100 wow zoomIn" style="margin-top: 15%;" alt="">
+                        </div>
+                        <div class="col-6"id="layout1">
+                            <img src="Img/images (1).jpeg" class="img-fluid rounded w-75 wow zoomIn" style="margin-top: 25%;" alt="">
+                        </div>
+                        <div class="col-6"id="layout2">
+                            <img src="Img/download (1).jpeg" class="img-fluid rounded w-75 wow zoomIn" style="margin-left: 20%;" alt="">
+                        </div>
+                        <div class="col-6"id="layout3">
+                            <img src="Img/images.jpeg" class="img-fluid rounded w-90 wow zoomIn" style="margin: right 25px;;" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- About Us Section -->
+                <div class="about-us ms-4 " id="about-us">
+                    <h5 class="section-title ff-secondary text-start text-orange fw-normal"><b>━━━About Us━━━</b></h5>
+                    <h1 class="mb-4 ">Welcome to <i class="fa fa-utensils text-orange me-2"></i>Sai Baba Veg Restaurant</h1>
+                    <b><p> "Born from a passion for culinary excellence and a love for community, Sai Baba Veg Restaurant was established to bring people together over exceptional meals."</p>
+                    <p> "At Sai Baba Veg Restaurant, we believe in creating memorable dining experiences through fresh ingredients, innovative flavors, and heartfelt hospitality."</p>
+                    <p> "We take pride in sourcing local, sustainable ingredients and crafting dishes that showcase our dedication to authenticity and flavor."</p>
+                    <p>"From the warm, inviting atmosphere to the carefully curated menu, we aim to delight your senses and make every visit special."</p>
+                    <p>"Led by our talented chefs and passionate team, Sai Baba Veg Restaurant is a place where creativity and hospitality come to life."</p></b>
+                    <div class="row g-4 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                <h1 class="flex-shrink-0 display-5 text-orange mb-0 number1"><b>5</b></h1>
+                                <div class="ps-4">
+                                    <p class="mb-0">Years of</p>
+                                    <h6 class="text-uppercase mb-0">EXPERIENCE</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-center border-start border-5 border-primary px-3">
+                                <h1 class="flex-shrink-0 display-5 text-orange mb-0 number2"><b>10</b></h1>
+                                <div class="ps-4">
+                                    <p class="mb-0">Popular</p>
+                                    <h6 class="text-uppercase mb-0">Master Chefs</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About section ends-->
+
+<!-- Menu section start-->
+ 
+<div class="container-xxl py-5" id="menu">
+    <div class="container">
+        <div class="text-center wow fadeInup">
+            <h5 class="section-title ff-secondary text-center text-orange fw-normal">
+                <b>━━━Food Menu━━━</b>
+            </h5>
+            <h1 class="mb-5">Most Popular Items</h1>
+        </div>
+        <div class="tab-class text-center wow fadeInup" data-wow-delay="0.1s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5" id="menuTabs">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active" data-bs-toggle="pill" data-bs-target="#specialLunch" role="tab">
+                        <i class="fa fa-hamburger fa-2x text-orange"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Special</small>
+                            <h6 class="mt-n1 mb-0" style="color: black;"> <b>Lunch</b></h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#lovelyDinner" role="tab">
+                        <i class="fa fa-utensils fa-2x text-orange"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Lovely</small>
+                            <h6 class="mt-n1 mb-0" style="color: black;"> <b>Dinner</b></h6>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link" data-bs-toggle="pill" data-bs-target="#popularBreakfast" role="tab">
+                        <i class="fa fa-coffee fa-2x text-orange"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Popular</small>
+                            <h6 class="mt-n1 mb-0" style="color: black;"> <b>Breakfast</b></h6>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link " data-bs-toggle="pill" data-bs-target="#colddrink" role="tab">
+                        <i class="fa fa-glass-cheers fa-2x text-orange"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Chilled</small>
+                            <h6 class="mt-n1 mb-0" style="color: black;"> <b>Cold Drink</b></h6>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link " data-bs-toggle="pill" data-bs-target="#hotdrink" role="tab">
+                        <i class="fa fa-mug-hot fa-2x text-orange"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Comforting</small>
+                            <h6 class="mt-n1 mb-0" style="color: black;"> <b> Hot Drink</b></h6>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link " data-bs-toggle="pill" data-bs-target="#Desserts" role="tab">
+                        <i class="fa fa-ice-cream fa-2x text-orange"></i>
+                        <div class="ps-3">
+                            <small class="text-body">Delicious </small>
+                            <h6 class="mt-n1 mb-0" style="color: black;"> <b>Desserts</b></h6>
+                        </div>
+                    </a>
+                </li>
+
+            </ul>
+            <div class="tab-content">
+                <!-- Special Lunch Items -->
+                <div class="tab-pane fade show active" id="specialLunch" role="tabpanel">
+                    <div class="row g-4">
+                        <!-- Each item now uses col-lg-6 to create two columns -->
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/thakali.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Veg Thakali</span>
+                                        <span class="text-orange">Rs200</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A wholesome vegetarian meal with a variety of dishes, typically including lentils, rice, vegetables, and pickles.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/pulao.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Pulao</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A fragrant and flavorful rice dish cooked with aromatic spices and vegetables.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/momo.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span> Veg Mo:Mo</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        Steamed or fried dumplings filled with a delicious vegetarian filling, often made with vegetables and spices.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/chowmein.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Veg Chowmein</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        LA stir-fried noodle dish with a mix of vegetables, often served with a savory sauce.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/sel roti.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Sel Roti</span>
+                                        <span class="text-orange">Rs50</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A traditional Newari sweet bread, deep-fried and crispy on the outside, with a soft and slightly chewy interior.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/naan.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Naan</span>
+                                        <span class="text-orange">Rs180</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A soft, leavened flatbread, often served with butter or various dips.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/burger.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Veg Burger</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A vegetarian burger patty made with vegetables and spices, served on a bun with lettuce, tomato, and other toppings.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Lunch/images.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Veg Pizza</span>
+                                        <span class="text-orange">Rs250</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A pizza topped with a variety of vegetables, cheese, and a tangy tomato sauce.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Add more lunch items here in the same structure -->
+                    </div>
+                </div>
+
+                <!-- Lovely Dinner Items -->
+                <div class="tab-pane fade" id="lovelyDinner" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Dinner/biryani].jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Veg Biryani</span>
+                                        <span class="text-orange">Rs200</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A flavorful rice dish cooked with aromatic spices, vegetables.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Dinner/dal bhat.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Dal Bhat</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A traditional Nepalese meal consisting of steamed rice (bhat) served with lentil soup (dal) and various side dishes like vegetables, pickles, and chutney.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/korma1.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Korma</span>
+                                        <span class="text-orange">Rs180</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A rich and creamy curry typically made with  vegetables, cooked in a thick, flavorful sauce.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Dinner/roti.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Roti </span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A flatbread made from wheat flour, often served with curries or other dishes.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more dinner items here in the same structure -->
+                    </div>
+                </div>
+
+                <!-- Popular Breakfast Items -->
+                <div class="tab-pane fade" id="popularBreakfast" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/dosa.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Dosa</span>
+                                        <span class="text-orange">Rs180</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A thin, crispy, fermented crepe made from rice and lentil batter, often served with sambar (a lentil-based vegetable stew) and chutney.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/idli.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Idli</span>
+                                        <span class="text-orange">Rs100</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        Soft, steamed rice cakes, typically served with sambar and chutney.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/aloo paratha.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Aloo Paratha</span>
+                                        <span class="text-orange">Rs100</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A flatbread stuffed with spiced mashed potatoes, often served with yogurt or pickle.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/sandwich.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Sandwich</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A bread sandwich filled with various ingredients like vegetables, cheese.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/Upma.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Upma</span>
+                                        <span class="text-orange">Rs100</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A semolina-based porridge cooked with vegetables and spices.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/breakfast/Yogurt with Honey and Nuts.jpeg" class="flex-shrink-0 img-fluid rounded" style="height: 100px;" alt="">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Yogurt with Honey & Nuts</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A healthy and refreshing yogurt dish topped with honey and nuts.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Add more breakfast items here in the same structure -->
+                    </div>
+                </div>
+
+                <!-- Cold Drink -->
+                <div class="tab-pane fade" id="colddrink" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/cocacola.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Cocacola</span>
+                                        <span class="text-orange">Rs50</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A popular carbonated soft drink.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/pepsi.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Pepsi</span>
+                                        <span class="text-orange">Rs50</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        Another popular carbonated soft drink.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/fanta.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Fanta</span>
+                                        <span class="text-orange">Rs50</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A citrus-flavored carbonated soft drink.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/sprite.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Sprite</span>
+                                        <span class="text-orange">Rs50</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A lemon-lime flavored carbonated soft drink.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/water.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Water</span>
+                                        <span class="text-orange">Rs20</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        our body needs it.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/juice.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Juice</span>
+                                        <span class="text-orange">Rs80</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A refreshing beverage made from fresh fruits.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/lassi.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Lassi</span>
+                                        <span class="text-orange">Rs60</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A yogurt-based drink, often flavored with fruits or spices.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/cold drink/Shikanji.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Shikanji</span>
+                                        <span class="text-orange">Rs50</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A refreshing lemon-based drink, often sweetened with sugar and flavored with spices.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more breakfast items here in the same structure -->
+                    </div>
+                </div>
+
+                <!-- Hot Drink -->
+                <div class="tab-pane fade" id="hotdrink" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Hot drink/Nepali Tea (Chiya).jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Chiya</span>
+                                        <span class="text-orange">Rs30</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A popular South Asian tea, typically made with black tea, milk, sugar, and spices like cardamom and ginger.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Hot drink/Cappuccino.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Cappuccino</span>
+                                        <span class="text-orange">Rs100</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A coffee drink made with espresso, steamed milk, and foamed milk.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Hot drink/Hot Chocolate.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Hot Chocolate</span>
+                                        <span class="text-orange">Rs120</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A warm and comforting drink made with chocolate, milk, and often topped with whipped cream.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Hot drink/Lemongrass Tea.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Lemongrass Tea</span>
+                                        <span class="text-orange">Rs30</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A refreshing herbal tea made with lemongrass, often served hot or iced.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Hot drink/Herbal Tea.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Herbal Tea</span>
+                                        <span class="text-orange">Rs30</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A tea made from a blend of herbs, known for its calming and soothing properties.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Add more breakfast items here in the same structure -->
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <div class="tab-pane fade" id="Desserts" role="tabpanel">
+                    <div class="row g-4">
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Desserts/Apple pie.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Apple Pie</span>
+                                        <span class="text-orange">Rs200</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A classic dessert with a flaky crust filled with sweet apples.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Desserts/cheese cake.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Cheese Cake</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A creamy and rich dessert with a smooth cheesecake filling and a crumbly crust.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Desserts/chocolate lava cake.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Chocolate Lava Cake</span>
+                                        <span class="text-orange">Rs150</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A warm chocolate cake with a molten chocolate center.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Desserts/ice cream sundae.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Ice-Cream</span>
+                                        <span class="text-orange">Rs100</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A frozen dessert made from cream, milk, sugar, and flavorings.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Desserts/Rasmalai.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Rasmalai</span>
+                                        <span class="text-orange">Rs60</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        A sweet dish made with soft cheese dumplings soaked in a creamy, cardamom-flavored milk.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="d-flex align-items-center">
+                                <img src="Img/Desserts/Gulab Jamoon.jpeg" class="flex-shrink-0 img-fluid rounded" alt="" style="height: 100px;">
+                                <div class="w-100 d-flex flex-column text-start ps-4">
+                                    <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                        <span>Gulab Jamun</span>
+                                        <span class="text-orange">Rs60</span>
+                                    </h5>
+                                    <small class="fst-italic">
+                                        Sweet, fried dough balls soaked in a fragrant syrup.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <!-- Add more breakfast items here in the same structure -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Menu section Ends-->
+
+<!-- Reservation section start-->
+    
+<div class="container-xxl py-5 px-0 wow fadeInup" id="Reservation">
+    <div class="row g-0">
+        <div class="col-md-6">
+            <div class="video">
+                <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-6 bg-dark align-items-center">
+            <div class="p-5">
+                <h5 class="section-title ff-secondary text-start text-orange fw-normal">
+                    <b>━━━Reservation━━━</b>
+                </h5>
+                <h1 class="text-white mb-4">
+                    Book A Table Online
+                </h1>
+                <form action="" id="myform">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="date" class="form-control" id="date" placeholder="Select Date" required>
+                                <label for="date">Select Date</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                               <select class="form-select" id="select1" required>
+                                <option value="0">Select No. Of People</option>
+                                <option value="1">1 People</option>
+                                <option value="2">2 People</option>
+                                <option value="3">3 People</option>
+                                <option value="4">4 People</option>
+                               </select>
+                               <label for="select1">No. Of People</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-floating">
+                                <textarea class="form-control" id="message" placeholder="Special Request" style="height: 100px;"></textarea>
+                                <label for="message">Special Request</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit" id="submitButton">Book Now</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="videoModalLabel">Youtube Video</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Video Background and Play Button -->
+                <div class="video-container">
+                    <button class="btn-play">
+                        <span></span>
+                    </button>
+                    <div class="ratio ratio-16x9">
+                        <iframe id="video" src="veg.mp4" allowfullscreen="true" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Reservation section Ends-->
+
+<!-- Team section start-->
+
+<div class="container-xxl pt-5 pb-5">
+    <div class="container">
+        <div class="text-center wow fadeInup">
+            <h5 class="section-title ff-secondary text-center text-orange fw-normal">
+                <b>━━━Team Members━━━</b>
+            </h5>
+            <h1 class="mb-5">Our Master Chefs</h1>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 wow fadeInup">
+                <div class="team-item text-center rounded overflow-hidden" style="background-color: grey;">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="Img/chef4.jpeg" alt="">
+                    </div>
+                    <h5 class="mb-0">Gordon Ramsay</h5>
+                    <small>Celebrity Chef</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/gordonramsay"><i class="fab fa-facebook btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://x.com/GordonRamsay"><i class="fab fa-twitter btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/gordongram?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram btn-secondary"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInup">
+                <div class="team-item text-center rounded overflow-hidden" style="background-color: grey;">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="Img/chef2.png" alt="">
+                    </div>
+                    <h5 class="mb-0">Jamie Oliver</h5>
+                    <small>Celebrity Chef</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.facebook.com/jamieoliver"><i class="fab fa-facebook btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://x.com/jamieoliver"><i class="fab fa-twitter btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href="https://www.instagram.com/jamieoliver/"><i class="fab fa-instagram btn-secondary"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 wow fadeInup">
+                <div class="team-item text-center rounded overflow-hidden" style="background-color: grey;">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="Img/chef3.png" alt="">
+                    </div>
+                    <h5 class="mb-0">Joël Robuchon</h5>
+                    <small> Legendary Chef</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram btn-secondary"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 wow fadeInup" >
+                <div class="team-item text-center rounded overflow-hidden" style="background-color: grey;">
+                    <div class="rounded-circle overflow-hidden m-4">
+                        <img class="img-fluid" src="Img/chef1.png" alt="">
+                    </div>
+                    <h5 class="mb-0">Thomas Keller</h5>
+                    <small>Chef-Owner</small>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-facebook btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-twitter btn-secondary"></i></a>
+                        <a class="btn btn-square btn-primary mx-1" href=""><i class="fab fa-instagram btn-secondary"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Team section Ends-->
+
+
+<!-- Testimonial-->
+<h5 class="testimonials-heading" id="Testimonials"><b>━━━Testimonials━━━</b></h5>
+<p style="text-align: center; font-weight: bold; font-size: 20px;">What Customer Say</p>
+<div class="wrapper">
+    <div class="single-card " >
+        <div class="img-area ">
+            <img src="Img/1.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Sandesh Bhattarai</h3>
+            <p>"Great food, great service! Loved it!"</p>
+        </div>
+    </div>
+
+    <div class="single-card">
+        <div class="img-area">
+            <img src="Img/2.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Kishan Yadav</h3>
+            <p>"Delicious food, friendly staff. Will definitely be back."</p>
+        </div>
+    </div>
+
+    <div class="single-card">
+        <div class="img-area">
+            <img src="Img/3.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Krishna Yadav</h3>
+            <p>"Best Thakali I've ever had!".</p>
+        </div>
+    </div>
+
+   
+    <div class="single-card">
+        <div class="img-area">
+            <img src="Img/4(1)(1).jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Shubham Sah</h3>
+            <p>"A hidden gem with amazing food."</p>
+        </div>
+    </div>
+
+    <div class="single-card">
+        <div class="img-area">
+            <img src="Img/6.jpg" alt="">
+        </div>
+        <div class="info">
+            <h3>Sulav Chaudhary</h3>
+            <p>"Highly recommend this place for a delicious meal."</p>
+        </div>
+    </div>
+
+    
+    
+
+</div>
+<!-- Testimonial-->
+
+<!-- Footer section start-->
+
+<div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeInup">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-orange fw-normal mb-4"><pre style="size: 10px;">        ━Company━</pre></h4>
+                <hr>
+                <a href="#about-us" class="btn btn-link" style="text-decoration: none;"><i class="fa fa-home fa-1x" style="color: white;"></i> About Us</a>
+                <a href="contact.html" class="btn btn-link" style="text-decoration: none;"><i class="fa fa-address-book fa-1x" style="color: white;"></i> Contact Us</a>
+                <a href="" class="btn btn-link" style="text-decoration: none;"><i class="fa fa-school fa-1x" style="color: white;"></i> School</a>
+                <a href="" class="btn btn-link" style="text-decoration: none;"><i class="fa fa-user-secret " style="color: white;"></i> Privacy Policy</a>
+                <a href="" class="btn btn-link" style="text-decoration: none;"><i class="fa  fa-chevron-right fa-1x" style="color: white;"></i> Terms & Conditions</a>
+            </div>
+            <div class="col-lg-3 col-md-6" id="Contact">
+                <h4 class="section-title ff-secondary text-start text-orange fw-normal mb-4">━Contact━</h4>
+                <hr>
+                <p class="mb-2"><i class="fa fa-map-marker-alt "></i> Tokha-7, Kathmandu, Nepal</p>
+                <p class="mb-2"><i class="fa fa-phone-alt "></i> +977 9826871986</p>
+                <p class="mb-2"><i class="fa fa-envelope me-3"></i>Info@restorant.com</p>
+                <div class="d-flex pt-2">
+                    <a href="https://x.com/home" class="btn btn-outline-light btn-social"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100090212884615" class="btn btn-outline-light btn-social"><i class="fab fa-facebook"></i></a>
+                    <a href="http://www.youtube.com/@hydrogengaming2.0" class="btn btn-outline-light btn-social"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/in/sai-baba-veg-restaurant-a28b91340/" class="btn btn-outline-light btn-social"><i class="fab fa-linkedin"></i></a>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-orange fw-normal mb-4">━Opening━</h4>
+                <hr>
+                <h5 class="text-light fw-normal">Sunday - Thursday</h5>
+                <p>09AM - 10PM</p>
+                <h5 class="text-light fw-normal">Friday</h5>
+                <p>10AM - 10PM</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <h4 class="section-title ff-secondary text-start text-orange fw-normal mb-4">━Newsletter━</h4>
+                <hr>
+                <p>Visit Sai Baba Veg Restaurant for flavors😋 you'll love! 🍴 Check out our latest menu and special events. Follow us for updates and exclusive offers. See you soon! 🌟</p>
+                <div class="position-relative mx-auto">
+                    <input type="text" class="form-control border-primary w-100 py-3 ps- pe-6">
+
+                    <button class="btn btn-primary py-2 position-absolute top-0 end-0 me-3 mt-2" type="submit" id="submitButton">SignUp</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="copyright">
+            <div class="row">
+                <div class="col-md-6 col-lg-12 text-center mb-3 mb-md-0 ">
+                     <a href="" class="border-bottom" style="text-decoration: none; color: orange;"><b style="color: white;">&copy;</b>Sai Baba Restaurant, All right Reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<a class="gotopbtn" href="#"><i class="fa fa-home"></i></a>
+</body>
+</html>
